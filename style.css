@@ -31,7 +31,7 @@ line-height: 1.618;
 }
 
 .condensed {
-  line-height: 1.1;
+  line-height: 1.2;
   font-size: clamp(14px, calc(0.875rem + ((1vw - 6.4px) * 2.2368)), 48px);
 }
 
@@ -50,6 +50,7 @@ a {
 
 #amount.amount-condensed {
   font-size: clamp(1em,6vw,6vh);
+  margin-bottom: 0.125em;
 }
 
 .condensed .intro p {
@@ -114,6 +115,10 @@ a {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+footer p {
+  font-size: 12pt;
 }
 
 .content {
