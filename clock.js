@@ -13,7 +13,7 @@ var current = startingAmount + (new Date().getTime() - start) * dollarsPerMillis
 amount.innerHTML = formatMoney(current);
 }
 
-setInterval(update,1000);
+setInterval(update,16);
 
 function formatMoney(amount) {
 var dollars = Math.floor(amount).toString().split('');

@@ -28,7 +28,15 @@ body {
 background-color: #100e0e; /* Dark gray background */
 overflow-x: hidden;
 line-height: 1.618;
+}
 
+.condensed {
+  line-height: 1.1;
+  font-size: clamp(14px, calc(0.875rem + ((1vw - 6.4px) * 2.2368)), 48px);
+}
+
+a {
+  color: #b81f2e;
 }
 
 #amount {
@@ -38,6 +46,14 @@ line-height: 1.618;
     white-space: nowrap;
     color: #b81f2e;
     text-shadow: 0px 0px 4px rgba(184, 31, 46, 1), 0px 0px 0.66em rgba(184, 31, 46, 0.2);
+}
+
+#amount.amount-condensed {
+  font-size: clamp(1em,6vw,6vh);
+}
+
+.condensed .intro p {
+  text-align: center;
 }
 
 .bottom-line, .hero-text {
@@ -67,6 +83,10 @@ line-height: 1.618;
     text-transform: uppercase;
 }
 
+.container-condensed {
+  justify-content: center !important;
+}
+
 .row {
     display: flex;
     flex-direction: row;
@@ -87,7 +107,6 @@ line-height: 1.618;
   background-color: #100e0e;
   width: 100vw;
   box-shadow: 0px -20px 80px -0px black;
-
 }
 
 .row-3 {
@@ -104,6 +123,10 @@ line-height: 1.618;
 .intro, .cta {
     padding: 20px 40px;
     text-align: left;
+}
+
+.condensed .intro, .condensed .cta {
+  padding: 6px 6px;
 }
 
 .image-left {
@@ -141,6 +164,10 @@ footer p {
   border: 1px solid #E2E2E2; /* Light gray footer border */
   display: flex;
   padding: 10px; margin:10px;
+}
+
+.condensed p {
+  margin:0;
 }
 
 @media screen and (min-width: 768px) {
